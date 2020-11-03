@@ -1,0 +1,206 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-03T20:16:20.604Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8830055800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library2.stepDefs.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "user should able to see Book Categories",
+        "description": "",
+        "id": "book-management;user-should-able-to-see-book-categories",
+        "after": [
+          {
+            "result": {
+              "duration": 600193200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library2.stepDefs.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 435081600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user login as a \"student\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.library2.stepDefs.LoginStepDefs.user_login_as_a(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3959762200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click book_categories \"ALL\" selected by default",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ALL\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.library2.stepDefs.BookStepDefs.user_click_book_categories_selected_by_default(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 480171700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should see categories following below",
+            "match": {
+              "location": "com.library2.stepDefs.BookStepDefs.user_should_see_categories_following_below(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ALL"
+                ]
+              },
+              {
+                "cells": [
+                  "Action and Adventure"
+                ]
+              },
+              {
+                "cells": [
+                  "Anthology"
+                ]
+              },
+              {
+                "cells": [
+                  "Classic"
+                ]
+              },
+              {
+                "cells": [
+                  "Comic and Graphic Novel"
+                ]
+              },
+              {
+                "cells": [
+                  "Crime and Detective"
+                ]
+              },
+              {
+                "cells": [
+                  "Drama"
+                ]
+              },
+              {
+                "cells": [
+                  "Fable"
+                ]
+              },
+              {
+                "cells": [
+                  "Fairy Tale"
+                ]
+              },
+              {
+                "cells": [
+                  "Fan-Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Fantasy"
+                ]
+              },
+              {
+                "cells": [
+                  "Historical Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Horror"
+                ]
+              },
+              {
+                "cells": [
+                  "Science Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Biography/Autobiography"
+                ]
+              },
+              {
+                "cells": [
+                  "Humor"
+                ]
+              },
+              {
+                "cells": [
+                  "Romance"
+                ]
+              },
+              {
+                "cells": [
+                  "Short Story"
+                ]
+              },
+              {
+                "cells": [
+                  "Essay"
+                ]
+              },
+              {
+                "cells": [
+                  "Memoir"
+                ]
+              },
+              {
+                "cells": [
+                  "Poetry"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Book management",
+    "description": "",
+    "id": "book-management",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Book.feature",
+    "tags": []
+  }
+]
