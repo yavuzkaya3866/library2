@@ -10,13 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public abstract class BasePage {
-    @FindBy(linkText = "Log Out")
-    public WebElement logOutLink;
 
-    @FindBy(id = "navbarDropdown")
-    public WebElement userAvatar;
-    @FindBy(css = "ul#menu_item>li")
-    public List<WebElement> menuItem;
 
     public BasePage() {
         PageFactory.initElements(Driver.get(), this);
