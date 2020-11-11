@@ -1,27 +1,15 @@
-Feature: Login
 
-
-  Scenario Outline: login as authorized user
-    When user login as a "<role>"
-    Then user on "<page>"
-
-    Examples:
-      | role        | page      |
-      | student11   | books     |
-      | librarian13 | dashboard |
-
-
-  Scenario:  user should able to logout
-    Given user login as a "student"
-    When the user should able to click "Log Out"
-    Then user should able to "login" page
-
-
-  Scenario Outline: access to modules
-    Given user login as a "<userType>"
-    Then user should able to access "<module>"
+@login
+Feature:the user signed in and
+  Scenario Outline: login as a user
+    Given user on the login page
+    When user enters "<email>" and "<password>"
+    Then "<role>" on  "<page>"
 
     Examples:
-      | userType    | module                  |
-      | student11   | Books, Borrowing Books  |
-      | librarian13 | Dashboard, Users, Books |
+      | email               | password | role        | page            |
+      | student98@library   | A15Oposz | student98   | Book Management |
+      | student99@library   | 8tIDMH5x | student99   | Book Management |
+      | student100@library  | CUcGL8fe | student100  | Book Management |
+      | librarian15@library | S5Ejblg1 | librarian15 | Dashboard       |
+

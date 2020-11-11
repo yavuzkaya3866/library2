@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2020-11-03T20:16:20.604Z",
+        "start_timestamp": "2020-11-11T20:20:33.228Z",
         "before": [
           {
             "result": {
-              "duration": 8830055800,
+              "duration": 3493496000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "user should able to see Book Categories",
+        "line": 11,
+        "name": "login as a user",
         "description": "",
-        "id": "book-management;user-should-able-to-see-book-categories",
+        "id": "the-user-signed-in-and;login-as-a-user;;2",
         "after": [
           {
             "result": {
-              "duration": 600193200,
+              "duration": 107605000,
               "status": "passed"
             },
             "match": {
@@ -31,176 +31,368 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 435081600,
+              "duration": 167027000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user login as a \"student\"",
+            "name": "user on the login page",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"student\"",
-                  "offset": 16
-                }
-              ],
-              "location": "com.library2.stepDefs.LoginStepDefs.user_login_as_a(java.lang.String)"
+              "location": "com.library2.stepDefs.LoginStepDefs.user_on_the_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3959762200,
+              "duration": 343409000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user click book_categories \"ALL\" selected by default",
+            "name": "user enters \"student98@library\" and \"A15Oposz\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"ALL\"",
-                  "offset": 27
+                  "val": "\"student98@library\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"A15Oposz\"",
+                  "offset": 36
                 }
               ],
-              "location": "com.library2.stepDefs.BookStepDefs.user_click_book_categories_selected_by_default(java.lang.String)"
+              "location": "com.library2.stepDefs.LoginStepDefs.user_enters_and(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 480171700,
+              "duration": 1786840000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user should see categories following below",
+            "name": "\"student98\" on  \"Book Management\"",
             "match": {
-              "location": "com.library2.stepDefs.BookStepDefs.user_should_see_categories_following_below(java.util.List\u003cjava.lang.String\u003e)"
+              "arguments": [
+                {
+                  "val": "\"student98\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"Book Management\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.library2.stepDefs.LoginStepDefs.on(java.lang.String,java.lang.String)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "ALL"
-                ]
-              },
-              {
-                "cells": [
-                  "Action and Adventure"
-                ]
-              },
-              {
-                "cells": [
-                  "Anthology"
-                ]
-              },
-              {
-                "cells": [
-                  "Classic"
-                ]
-              },
-              {
-                "cells": [
-                  "Comic and Graphic Novel"
-                ]
-              },
-              {
-                "cells": [
-                  "Crime and Detective"
-                ]
-              },
-              {
-                "cells": [
-                  "Drama"
-                ]
-              },
-              {
-                "cells": [
-                  "Fable"
-                ]
-              },
-              {
-                "cells": [
-                  "Fairy Tale"
-                ]
-              },
-              {
-                "cells": [
-                  "Fan-Fiction"
-                ]
-              },
-              {
-                "cells": [
-                  "Fantasy"
-                ]
-              },
-              {
-                "cells": [
-                  "Historical Fiction"
-                ]
-              },
-              {
-                "cells": [
-                  "Horror"
-                ]
-              },
-              {
-                "cells": [
-                  "Science Fiction"
-                ]
-              },
-              {
-                "cells": [
-                  "Biography/Autobiography"
-                ]
-              },
-              {
-                "cells": [
-                  "Humor"
-                ]
-              },
-              {
-                "cells": [
-                  "Romance"
-                ]
-              },
-              {
-                "cells": [
-                  "Short Story"
-                ]
-              },
-              {
-                "cells": [
-                  "Essay"
-                ]
-              },
-              {
-                "cells": [
-                  "Memoir"
-                ]
-              },
-              {
-                "cells": [
-                  "Poetry"
-                ]
-              }
-            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-11T20:20:39.220Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2325330000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library2.stepDefs.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "login as a user",
+        "description": "",
+        "id": "the-user-signed-in-and;login-as-a-user;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 144278000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library2.stepDefs.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 174126000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user on the login page",
+            "match": {
+              "location": "com.library2.stepDefs.LoginStepDefs.user_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 324385000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters \"student99@library\" and \"8tIDMH5x\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student99@library\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"8tIDMH5x\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.library2.stepDefs.LoginStepDefs.user_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1830556000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"student99\" on  \"Book Management\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student99\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"Book Management\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.library2.stepDefs.LoginStepDefs.on(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-11T20:20:44.026Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3695197000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library2.stepDefs.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "login as a user",
+        "description": "",
+        "id": "the-user-signed-in-and;login-as-a-user;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 103820000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library2.stepDefs.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 157607000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user on the login page",
+            "match": {
+              "location": "com.library2.stepDefs.LoginStepDefs.user_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 311883000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters \"student100@library\" and \"CUcGL8fe\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student100@library\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"CUcGL8fe\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.library2.stepDefs.LoginStepDefs.user_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1822981000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"student100\" on  \"Book Management\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student100\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"Book Management\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.library2.stepDefs.LoginStepDefs.on(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-11T20:20:50.124Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2287467000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library2.stepDefs.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "login as a user",
+        "description": "",
+        "id": "the-user-signed-in-and;login-as-a-user;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 105599000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library2.stepDefs.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 168058000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user on the login page",
+            "match": {
+              "location": "com.library2.stepDefs.LoginStepDefs.user_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 324111000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters \"librarian15@library\" and \"S5Ejblg1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian15@library\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"S5Ejblg1\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.library2.stepDefs.LoginStepDefs.user_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1651334000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"librarian15\" on  \"Dashboard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian15\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.library2.stepDefs.LoginStepDefs.on(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
           }
         ]
       }
     ],
-    "name": "Book management",
+    "name": "the user signed in and",
     "description": "",
-    "id": "book-management",
+    "id": "the-user-signed-in-and",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Book.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
